@@ -1,2 +1,3 @@
 astrologyDashboard
 ==================
+Astrology Dashboard is a web application for professional astrologers.  The application provides information about the astrologer as well as the ability to create a client account. Clients have access to their own dashboard, where they can update personal information, purchase astrological services, as well as check on the status of current services.  The astrologer has access to a master dashboard that provides client information as well as a service order "queue" that ensures client service orders are met in the proper order along with payment status, etc. 
