@@ -1,0 +1,35 @@
+body {
+    background-color: #FFFFCC;
+    font-family: 'Merriweather', serif;
+}
+img {
+    max-width: 100%;
+}
+.banner {
+    font-style: italic;
+    height: 100px;
+    background-image: url("../images/nikiastro-banner-moon2.png");
+    background-position: center;
+    background-size: 200%;
+    color: white;
+}
+.spacer {
+    height: 70px;
+}
+@media (min-width: 768px) {
+    .banner {
+        height: 150px;
+        background-size: 125%;
+    }
+    .spacer {
+        height: 90px;
+    }
+}
+@media (min-width: 992px) {
+    .banner {
+        height: 200px;
+    }
+    .spacer {
+        height: 140px;
+    }
+}
