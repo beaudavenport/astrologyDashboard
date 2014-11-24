@@ -8,18 +8,82 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
 </head>
 <body>
-    <!-- Banner with heading -->
-    <div class="text-center banner">
-        <div class="spacer"></div>
-        <nav class="navbar navbar-inverse">
+
+    <!-- Banner with heading and navbar -->
+    <div class="banner row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="spacer">
+        </div>
+        <div class="banner-title">
+            <h1>Nikki Davenport</h1>
+            <p class="text-light">Astrological Services</p>
+        </div>
+        <nav class="navbar navbar-default navbar-banner" role="navigation">
             <div class="container-fluid">
-                <p class="navbar-brand">Nikki Davenport</p>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>    
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                      <li><a href="#">Home</a></li>
+                      <li><a href="services.html">Services</a></li>
+                      <li><a href="#">Signs of the Zodiac</a></li>
+                      <li><a href="#">Planets</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
-    </div>  
-    <div class="container-fluid">
-        <div class="row">
         </div>
     </div>
+
+    <!-- content area -->
+    <div class="container-fluid">
+        <div class="row">
+            
+            <!-- about panel -->
+            <div class="col-md-3 col-sm-4 col-xs-12 about">
+                <div class="row text-center">
+                    <h4>Welcome!</h4>
+                    <p><span class="glyphicon glyphicon-globe"></span></p>
+                </div>
+                <div class="row">
+                    <div class="col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-6">
+                        <img src="assets/images/nikki-profile.jpg" />
+                    </div> 
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <p><small>With over 40 years of professional astrological experience, my services are 
+                        guaranteed to point you in the right direction.</small></p>
+                        <a class="btn btn-primary" href="services.html">My Services</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 col-sm-7 col-xs-12 well">
+                <h2><em><small>updates from </small><a href="//nikiastro.wordpress.com/">AstroSynergistics</a><small>, the astrology blog of Nikki Davenport</small></em></h2>
+                <div class="blog-content">
+                    <p>Narwhal YOLO hella quinoa, Truffaut disrupt lumbersexual fashion axe Thundercats. Stumptown blog Austin VHS bitters McSweeney's skateboard, paleo 
+                    American Apparel chia Truffaut lo-fi whatever selvage Echo Park. Selvage kogi try-hard small batch, Marfa readymade twee vinyl Thundercats 
+                    stumptown blog mumblecore skateboard. Locavore crucifix synth banh mi, Vice flexitarian tattooed plaid Etsy freegan cred actually. 
+                    Pop-up bicycle rights Brooklyn messenger bag, cray sriracha authentic retro pickled fingerstache. Schlitz YOLO hella food truck, 
+                    flannel authentic single-origin coffee. Sriracha fap fashion axe kale chips, jean shorts leggings banh mi twee cold-pressed tofu Neutra McSweeney's fixie.
+                    </p>
+                    <p>Sustainable tofu beard, locavore fap Cosby sweater pop-up heirloom selvage farm-to-table trust fund mustache flexitarian. 
+                    Synth High Life Etsy, actually meh disrupt banh mi ennui wayfarers. Tousled pickled chillwave tattooed. Twee cornhole street art quinoa, 
+                    gluten-free four dollar toast High Life fanny pack Kickstarter. Pickled swag lo-fi, taxidermy cred next level pug meditation cold-pressed mustache. 
+                    Squid small batch irony, hella locavore pop-up Tonx. Brooklyn deep v forage farm-to-table.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Application development by <a href="//beaudavenport.github.io">Beau Davenport</a> | <a href="admin">Admin Login</a></p>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
