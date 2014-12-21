@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  email: MyString
+  confirmation: MyString
+  receipt_number: MyString
+  birth_date_time: 2014-12-10 17:50:13
+  birth_place: MyString
+  service_id: 
+
+two:
+  email: MyString
+  confirmation: MyString
+  receipt_number: MyString
+  birth_date_time: 2014-12-10 17:50:13
+  birth_place: MyString
+  service_id: 

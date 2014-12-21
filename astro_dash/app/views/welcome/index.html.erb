@@ -1,2 +1,12 @@
-<h1>Hello, Rails!</h1>
+<h1>Nikki Davenport Astrology</h1>
 <%= link_to 'My Services', controller: 'services' %>
+<% @feed.items.each do |item| %>
+    <h3><%= item.pubDate %></h3>
+    <h3><%= item.title %></h3><br />
+    
+<% end %>
+
+<%= link_to 'Signs', '../content/signs' %>
+<%= link_to 'Houses', '../content/houses' %>
+<%= link_to 'Planets', '../content/planets' %>
+<%= link_to 'Events', '../content/events' %>

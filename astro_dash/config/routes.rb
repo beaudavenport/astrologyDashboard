@@ -1,12 +1,27 @@
 AstroDash::Application.routes.draw do
+  
+  get 'content/:name' => 'content_pages#show'
+  
   get "welcome/index"
+ 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-  resources :services
+  
+  # Admin route
+  namespace :admin do
+    resources :services, :content_pages, :events
+    get "index"
+  end
+  
+  resources :services, :content_pages, :events, :only => [:index, :show]
+  
+  # Customer orders route
+  # resources :orders
   
   # You can have the root of your site routed with "root"
   root 'welcome#index'
-
+  
+  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

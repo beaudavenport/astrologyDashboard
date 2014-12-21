@@ -12,5 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery-hotkeys
+//= require twitter/bootstrap
+//= require bootstrap-wysiwyg.js
 //= require turbolinks
 //= require_tree .

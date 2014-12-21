@@ -21,11 +21,26 @@ gem 'coffee-rails', '~> 4.0.0'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
+# jQuery Hotkeys
+gem 'jquery-hotkeys-rails'
+
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
+
+# Font Awesome gem
+gem 'font-awesome-less'
+
+# Bootstrap
+gem 'less-rails-bootstrap'
+
+# support for LESS
+gem "therubyracer"
+
+# Browser Auto Prefixer
+gem 'autoprefixer-rails'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

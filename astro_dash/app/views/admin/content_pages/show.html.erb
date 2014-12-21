@@ -1,0 +1,16 @@
+<p>
+  <strong>Heading</strong>
+  <%= @content_page.heading %>
+</p>
+ 
+<p>
+  <strong>Body:</strong>
+  <%= @content_page.body %>
+</p>
+
+<p>
+    <strong>Category:</strong>
+    <%= @content_page.category %>
+</p>
+<%= link_to 'Back', admin_content_pages_path %>
+| <%= link_to 'Edit', edit_admin_content_page_path(@content_page) %>

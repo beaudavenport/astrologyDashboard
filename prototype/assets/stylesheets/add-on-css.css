@@ -14,6 +14,9 @@ img {
     color: white;
     text-align: center;
 }
+.banner-inner {
+    padding: 0;
+}
 .banner-title {
     background-color: #222;
     opacity: 0.9;
@@ -96,7 +99,10 @@ img {
 .navbar-banner {
     background-color: #383838;
     border-radius: 0;
-    border: 1px solid #292929;
+    border: 1px solid #1c1c1c;
+    -moz-box-shadow: 0 2px 4px -2px #232323;
+    -webkit-box-shadow: 0 2px 4px -2px #232323;
+    box-shadow: 0 4px 2px -2px #232323;
 }
 .navbar-banner a {
     color: #DEDEDE !important; 

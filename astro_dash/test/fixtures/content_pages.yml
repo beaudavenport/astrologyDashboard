@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 1
+  heading: First House
+  body: The house of self.
+  type: house
+  
+two:
+  id: 2
+  heading: Mercury
+  body: The planet of communication.
+  type: planet
+
+three:
+  id: 3
+  heading: Aries
+  body: A fiery sign.
+  type: sign
