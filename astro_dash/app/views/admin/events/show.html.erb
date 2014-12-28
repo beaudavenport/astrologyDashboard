@@ -1,0 +1,16 @@
+<p>
+  <strong>Title:</strong>
+  <%= @event.name %>
+</p>
+ 
+<p>
+  <strong>Text:</strong>
+  <%= @event.description %>
+</p>
+
+<p>
+    <strong>date:</strong>
+    <%= @event.date %>
+</p>
+<%= link_to 'Back', admin_events_path %>
+| <%= link_to 'Edit', edit_admin_event_path(@event) %>

@@ -4,16 +4,16 @@ one:
   id: 1
   heading: First House
   body: The house of self.
-  type: house
+  category: house
   
 two:
   id: 2
   heading: Mercury
   body: The planet of communication.
-  type: planet
+  category: planet
 
 three:
   id: 3
   heading: Aries
   body: A fiery sign.
-  type: sign
+  category: sign

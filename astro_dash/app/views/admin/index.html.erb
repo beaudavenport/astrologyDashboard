@@ -1,1 +1,21 @@
 <h1>Admin</h1>
+<h2>Orders</h2>
+<table>
+  <tr>
+    <th>Order #</th>
+    <th>Name</th>
+    <th>Service</th>
+    <th colspan="3"></th>
+  </tr>
+ 
+  <% @orders.each do |order| %>
+    <tr>
+      <td><%= order.id %></td>
+      <td><%= order.customer %></td>
+      <td><%= order.service %></td>
+     
+    </tr>
+  <% end %>
+</table>
+<%= link_to 'Edit Content', admin_content_pages_path %>
+<%= link_to 'Edit Events', admin_events_path %>

@@ -12,4 +12,5 @@
     <strong>price:</strong>
     <%= @service.price %>
 </p>
+<%= link_to 'PURCHASE', new_order_path(:service_id => @service.id) %>
 <%= link_to 'Back', services_path %>

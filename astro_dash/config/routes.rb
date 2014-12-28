@@ -1,25 +1,27 @@
 AstroDash::Application.routes.draw do
   
-  get 'content/:name' => 'content_pages#show'
-  
-  get "welcome/index"
- 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
   
-  # Admin route
+  # You can have the root of your site routed with "root"
+  root 'welcome#index'
+  
+  get "welcome/index"
+  
+  # Display specific content pages based on parameter name in URL
+  get 'content/:name' => 'content_pages#show'
+  
+  # Admin namespace route exposes all CRUD operations for resources
   namespace :admin do
     resources :services, :content_pages, :events
     get "index"
   end
   
+  # Public route exposes read operations only for services, content pages and events
   resources :services, :content_pages, :events, :only => [:index, :show]
   
-  # Customer orders route
-  # resources :orders
-  
-  # You can have the root of your site routed with "root"
-  root 'welcome#index'
+  # Public route exposes only read and create operations for orders
+  resources :orders, :only => [:show, :new, :create]
   
   
   # Example of regular route:
