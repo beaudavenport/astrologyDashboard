@@ -13,7 +13,7 @@ AstroDash::Application.routes.draw do
   
   # Admin namespace route exposes all CRUD operations for resources
   namespace :admin do
-    resources :services, :content_pages, :events
+    resources :services, :content_pages, :events, :orders
     get "index"
   end
   

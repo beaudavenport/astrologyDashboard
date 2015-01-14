@@ -1,0 +1,9 @@
+// Site-wide SCSS 
+
+@font-face {
+    font-family: 'AstroGadget';
+    src: url(font-path('AstroGadget.ttf')) format('truetype');
+}
+.gadget {
+    font-family: 'AstroGadget';
+}

@@ -1,0 +1,17 @@
+# Authentication variables
+username: foo
+password: bar
+
+# Acceptable HTML Tags white list array
+HTML_white_list:
+  - b
+  - i
+  - strike
+  - u
+  - a 
+  - ul
+  - ol
+  - blockquote
+  - font
+  - div
+  - img

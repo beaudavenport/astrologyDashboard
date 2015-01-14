@@ -11,5 +11,6 @@
  *= require twitter/bootstrap
  *= require font-awesome
  *= require_self
+ *= require global
  *= require_tree .
  */

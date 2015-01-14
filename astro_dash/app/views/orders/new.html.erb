@@ -21,7 +21,8 @@
     <%= o.label :email %><br />
     <%= o.email_field :email %>
   </p>
-  <%= o.text_area :customer_info %>
+  <%= o.hidden_field :customer_info %>
+  <%= render 'shared/lite_editor' %>
   <%= o.hidden_field :service_id %>
   <p>
     <%= o.submit %>

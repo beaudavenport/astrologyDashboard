@@ -42,6 +42,9 @@ gem "therubyracer"
 # Browser Auto Prefixer
 gem 'autoprefixer-rails'
 
+# HTML Sanitizer
+gem 'sanitize'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
