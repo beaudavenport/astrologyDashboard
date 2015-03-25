@@ -4,6 +4,7 @@ class Service < ActiveRecord::Base
   
   before_save do
     self.description = sanitize(self.description)
+    self.required_info = sanitize(self.required_info)
   end
   
   validates :name, presence: true, length: {minimum: 5}

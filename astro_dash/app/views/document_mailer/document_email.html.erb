@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1><%= @order.customer %>, your documents have arrived!</h1>
+    <p>Order #<%= @order.id %></p>
+    <p><%= @order.service.name %></p>
+    <% @docs.each do |doc| %>
+      <h3><%= doc['name'] %></h3>
+      <h3><%= link_to('Click here to view this document', doc['link']) %></h3>
+    <% end %>
+  </body>
+</html>

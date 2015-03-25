@@ -4,7 +4,7 @@ require 'open-uri'
 class WelcomeController < ApplicationController
   
   def index
-    blog_rss_url = 'http://www.npr.org/rss/rss.php?id=3'
+    blog_rss_url = APP_CONFIG['rss_url']
     get_rss(blog_rss_url)
   end
   

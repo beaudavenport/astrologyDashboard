@@ -1,2 +1,14 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+one:
+  id: 1
+  email: beau@beau.com
+  customer: beau davenport
+  customer_info: 02/24/1988, St. Louis, Missouri, 3:40 PM
+  service_id: 1
 
+# 'Order # 2' includes only params that are permitted by order controller 
+two:
+  email: beau@beau.com
+  customer: beau davenport
+  customer_info: 02/24/1988, St. Louis, Missouri, 3:40 PM
+  service_id: 1

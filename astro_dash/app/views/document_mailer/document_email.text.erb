@@ -1,0 +1,9 @@
+<%= @order.customer %>, your documents have arrived!
+===============================================
+ 
+Order #<%= @order.id %>
+<% @order.service.name %>
+<% @docs.each do |doc| %>
+  doc.title
+  doc.file
+<% end %>

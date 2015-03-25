@@ -7,7 +7,14 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<h1>ADMIN CONTROL</h1>
+<nav class="navbar navbar-default navbar-banner" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <h1>Admin Control <small><%= link_to("logout", logout_path, :method => :delete) %></small></h1>
+        </div>
+    </div>
+</nav>
+<%= render partial: "shared/nav_banner" %>
 <%= yield %>
 
 </body>

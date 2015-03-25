@@ -2,13 +2,17 @@
 <html>
 <head>
   <title>AstroDash</title>
+  <link href='//fonts.googleapis.com/css?family=Merriweather:300italic,300' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<%= render partial: "shared/nav_banner" %>
 <%= yield %>
-
+  <div class="footer">
+    <p>Application development by <a href="//beaudavenport.github.io">Beau Davenport</a>
+    | <%= link_to 'Admin Login', login_path %></p>
+  </div>
 </body>
 </html>

@@ -45,6 +45,9 @@ gem 'autoprefixer-rails'
 # HTML Sanitizer
 gem 'sanitize'
 
+# Bootstrap Datepicker
+gem 'bootstrap-datepicker-rails'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false

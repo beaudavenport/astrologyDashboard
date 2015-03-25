@@ -1,4 +1,8 @@
-class Admin::OrdersController < ApplicationController
+class Admin::OrdersController < AdminController
+  
+  def index
+    @orders = Order.all
+  end
   
   def show
     @order = Order.find(params[:id])
@@ -13,10 +17,6 @@ class Admin::OrdersController < ApplicationController
       render 'new'
     end
     
-  end
-  
-  def show
-    @order = Order.find(params[:id])
   end
   
   def edit
@@ -40,8 +40,21 @@ class Admin::OrdersController < ApplicationController
     redirect_to admin_index_path
   end
   
+  # Generate email with link to service documents, update order status
+  def send_documents
+    @docs = ActiveSupport::JSON.decode(params[:files])
+    @order = Order.find(params[:id])
+    DocumentMailer.document_email(@docs, @order).deliver
+    
+    # update filled on date with current date
+    @order.filled_on = Date.today
+    @order.save
+    render :json => @order.filled_on
+  end
+  
   private
     def order_params
       params.require(:order).permit(:name, :description, :price)
     end
+    
 end

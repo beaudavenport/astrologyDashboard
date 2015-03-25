@@ -15,7 +15,19 @@
       <%= s.text_field :name %>
   </p>
   <%= s.hidden_field :description %>
-  <%= render 'shared/full_editor' %>
+  
+  <!-- if no content, set to default 'Enter text here', otherwise render content for editing -->
+  <% if @service.description.nil? %>
+    <%= render partial: 'shared/full_editor', locals: {content: "Enter text here"} %>
+  <% else %>
+    <%= render partial: 'shared/full_editor', locals: {content: @service.description} %>
+  <% end %>
+  
+  <p>
+      <%= s.label :required_info %><br />
+      <%= s.text_field :required_info %>
+  </p>
+  
   <p>
     <%= s.label :price %><br />
     <%= s.text_field :price %>

@@ -8,6 +8,6 @@ $(document).on "page:change", ->
   $("#editor").wysiwyg();
   
   # On submit, set value of hidden field to html contents of rich text editor
-  $("#new_order").submit ->
+  $(".new_order").submit ->
     $("#order_customer_info").val($("#editor").html());
     

@@ -13,8 +13,12 @@ AstroDash::Application.routes.draw do
   
   # Admin namespace route exposes all CRUD operations for resources
   namespace :admin do
+    # Post-only action method for sending order documents
+    post 'orders/send' => 'orders#send_documents'
+    
     resources :services, :content_pages, :events, :orders
-    get "index"
+    get "index" => 'orders#index'
+    
   end
   
   # Public route exposes read operations only for services, content pages and events
@@ -23,6 +27,11 @@ AstroDash::Application.routes.draw do
   # Public route exposes only read and create operations for orders
   resources :orders, :only => [:show, :new, :create]
   
+  # Public login route
+  get 'login' => 'sessions#new'
+  post 'login' => 'sessions#create'
+  delete 'logout' => 'sessions#destroy'
+
   
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

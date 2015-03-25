@@ -1,2 +1,5 @@
-<h1><%= @content_page.heading %></h1>
+<h1><% @content_pages.each do |cp| %></h1>
+<h1><%= cp.heading %></h1>
+<p><%= cp.body.html_safe %></p>
+<% end %>
 <p></p>

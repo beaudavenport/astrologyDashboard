@@ -1,17 +1,24 @@
+# RSS feed URL
+rss_url: https://nikiastro.wordpress.com/feed/
+
 # Authentication variables
 username: foo
 password: bar
 
 # Acceptable HTML Tags white list array
 HTML_white_list:
-  - b
-  - i
-  - strike
-  - u
-  - a 
-  - ul
-  - ol
-  - blockquote
-  - font
-  - div
-  - img
+  elements:
+    - b
+    - i
+    - strike
+    - u
+    - a 
+    - ul
+    - ol
+    - blockquote
+    - font
+    - div
+    - img
+  attributes:
+    - size
+    - face

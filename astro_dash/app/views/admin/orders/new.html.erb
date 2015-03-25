@@ -1,0 +1,5 @@
+<h2>Place an Order</h2>
+<h3><%= @order.service.name %></h3>
+<h3><%= @order.service.price %></h3>
+<%= render 'form' %>
+<%= link_to 'Back', admin_orders_path %>

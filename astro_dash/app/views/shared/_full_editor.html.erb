@@ -76,9 +76,7 @@
     
     <!-- editor div -->
     <div id="editor" contenteditable="true">
-        Edit text here!
+        <%= content.html_safe %>
     </div>
     
 </div>
-<h3>Acceptable tags:</h3>
-<h3><%= APP_CONFIG['HTML_white_list'] %></h3>

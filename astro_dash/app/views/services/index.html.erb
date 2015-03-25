@@ -1,19 +1,13 @@
-<h1>Listing services</h1>
- 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Description</th>
-    <th>Price</th>
-    <th colspan="1"></th>
-  </tr>
- 
-  <% @services.each do |service| %>
-    <tr>
-      <td><%= service.name %></td>
-      <td><%= service.description %></td>
-      <td><%= service.price %></td>
-      <td><%= link_to 'Show', service_path(service) %></td>
-    </tr>
-  <% end %>
-</table>
+<div class="container">
+  <h2 class="text-muted">Services</h2>
+  <div class="row">
+    <% @services.each do |service| %>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <h3><%= service.name %></h3>
+        <p><%= service.description %></p>
+        <h4>Price: <%= service.price %></h4>
+        <h4><%= link_to 'View Service', service_path(service) %></h4>
+      </div>
+    <% end %>
+  </div>
+</div>

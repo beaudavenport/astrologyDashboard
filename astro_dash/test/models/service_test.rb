@@ -33,13 +33,25 @@ class ServiceTest < ActiveSupport::TestCase
   # Test description validation
   test "model should only save description with white-listed tags" do
     
-    raw_description = "<script><</script><script>script></script>Hello<iframe></iframe><b>Raw Input</b>"
+    raw_description = "<font size='7'>Big</font><font face='serif'></font>"
     raw_input = Service.new(name: "raw_html_input", description: raw_description, price: 1.99)
     raw_input.save
     new_model = Service.last
     sanitized_description = new_model.description
     assert_not_equal raw_description, sanitized_description, "HTML white list ignored"
     assert_equal "Hello<b>Raw Input</b>", sanitized_description, "HTML white list not working as expected"
+  end
+  
+  # Test required info validation
+  test "model should only save required info with white-listed tags" do
+    
+    raw_info = "<font size='7'>Address</font><font face='serif'></font>"
+    raw_input = Service.new(name: "raw_html_input", required_info: raw_info, price: 1.99)
+    raw_input.save
+    new_model = Service.last
+    sanitized_info = new_model.required_info
+    assert_not_equal raw_info, sanitized_info, "HTML white list ignored"
+    assert_equal "Hello<b>Raw Input</b>", sanitized_info, "HTML white list not working as expected"
   end
   
 end

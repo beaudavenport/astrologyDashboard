@@ -1,0 +1,10 @@
+<h1>Admin Login</h1>
+<%= form_for(:session, url: login_path) do |s| %>
+  <%= s.label :login %>
+  <%= s.text_field :login, class: 'form-control' %>
+
+  <%= s.label :password %>
+  <%= s.password_field :password, class: 'form-control' %>
+
+  <%= s.submit "Log in", class: "btn btn-primary" %>
+<% end %>

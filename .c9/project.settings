@@ -14,7 +14,9 @@
         "@searchLimit": 100
     },
     "language": {
+        "@eslintrc": "true",
         "@instanceHighlight": "true",
+        "@semi": "true",
         "@undeclaredVars": "true",
         "@unusedFunctionArgs": "false",
         "@warnLevel": "info"

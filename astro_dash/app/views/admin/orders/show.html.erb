@@ -3,5 +3,11 @@
     <li><%= @order.customer %></li>
     <li><%= @order.customer_info %></li>
     <li><%= @order.status %></li>
+    <li><%= check_order_filled(@order) %></li>
     <li><%= @order.service.name %></li>
+    <%= form_tag(admin_orders_send_path, id: 'send_docs_form', remote: true) do %>
+      <%= hidden_field_tag(:id, @order.id) %>
+      <%= hidden_field_tag(:files, '[{"name":"filename.txt","link":"https://...","bytes":464,"icon":"https://...","thumbnailLink":"https://...?bounding_box=75&mode=fit"}, {"name":"filename2.txt","link":"https://...","bytes":1464,"icon":"https://...","thumbnailLink":"https://...?bounding_box=75&mode=fit"}]') %>
+      <%= submit_tag('Send Files') %>
+    <% end %>
 </ul>

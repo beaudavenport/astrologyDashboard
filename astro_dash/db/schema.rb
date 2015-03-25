@@ -11,15 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141228184218) do
-
-  create_table "admins", force: true do |t|
-    t.string   "name"
-    t.string   "password"
-    t.string   "email"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+ActiveRecord::Schema.define(version: 20150325160920) do
 
   create_table "content_pages", force: true do |t|
     t.string   "heading"
@@ -48,6 +40,7 @@ ActiveRecord::Schema.define(version: 20141228184218) do
     t.integer  "service_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.date     "filled_on"
   end
 
   add_index "orders", ["service_id"], name: "index_orders_on_service_id"
@@ -58,6 +51,7 @@ ActiveRecord::Schema.define(version: 20141228184218) do
     t.float    "price"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "required_info"
   end
 
 end
