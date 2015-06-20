@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+<div class="home">
+<div class="row">    
+    <!-- about panel -->
+    <div class="col-md-3 col-sm-4 col-xs-12 about">
+      <div class="row text-center">
+        <h4>Welcome!</h4>
+        <p><span class="glyphicon glyphicon-globe"></span></p>
+      </div>
+      <div class="row">
+        <div class="col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-6">
+          <img src="assets/images/nikki-profile.jpg" />
+        </div> 
+        <div class="col-md-6 col-sm-6 col-xs-6">
+          <p><small>With over 40 years of professional astrological experience, my services are 
+          guaranteed to point you in the right direction.</small></p>
+          <%= link_to 'My Services', services_path, class: "btn btn-primary" %>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-8 col-sm-7 col-xs-12">
+      <h2><em><small>updates from </small><a href="//nikiastro.wordpress.com/">AstroSynergistics</a><small>, the astrology blog of Nikki Davenport</small></em></h2>
+      <div class="blog-content">
+        <h3><%= @feed.items[0].pubDate %></h3>
+        <h3><%= @feed.items[0].title %></h3>
+        <p><%= @feed.items[0].description.html_safe %></p>
+      </div>
+    </div>
+  </div>
+
+</div>
