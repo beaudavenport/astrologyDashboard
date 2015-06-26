@@ -5,6 +5,9 @@ body {
 img {
     max-width: 100%;
 }
+.navbar {
+    margin-bottom: 0px;
+}
 .banner {
     font-style: italic;
     height: 100px;
@@ -16,9 +19,10 @@ img {
 }
 .banner-inner {
     padding: 0;
+    margin-bottom: 20px;
+    background-image: url("http://subtlepatterns.com/patterns/stardust.png");
 }
 .banner-title {
-    background-color: #222;
     opacity: 0.9;
     color: white;
     padding-left: 20px;
@@ -26,10 +30,19 @@ img {
     display: inline-block;
     text-align: center;
     margin-bottom: 5px;
+    font-family: 'Berkshire Swash', cursive;
+    
+    h1 {
+        font-size: 2.5em;
+    }
+    p {
+        font-size: 1.5em;
+    }
+    img {
+        height: 50px;
+    }
 }
-.banner-title h1 {
-    font-size: x-large;
-}
+
 .spacer {
     height: 5px;
 }
@@ -40,14 +53,21 @@ img {
         text-align: left;
     }
     .spacer {
-        height: 30px;
+        height: 10px;
     }
     .banner-title {
         margin-left: 50px;
-        margin-bottom: 30px;
-    }
-    .banner-title h1 {
-        font-size: x-large;
+        margin-bottom: 20px;
+        
+        h1 {
+        font-size: 4em;
+        }
+        p {
+            font-size: 2em;
+        }
+        img {
+            height: 70px;
+        }
     }
     .blog-content {
         border-left: 2px solid #D8D8D8;
@@ -60,14 +80,21 @@ img {
         text-align: left;
     }
     .spacer {
-        height: 60px;
+        height: 12px;
     }
     .banner-title {
         margin-left: 70px;
-        margin-bottom: 40px;
-    }
-    .banner-title h1 {
-        font-size: xx-large;
+        margin-bottom: 30px;
+  
+        h1 {
+            font-size: 5em;
+        }
+        p {
+            font-size: 2.5em;
+        }
+        img {
+            height: 90px;
+        }
     }
 }
 
