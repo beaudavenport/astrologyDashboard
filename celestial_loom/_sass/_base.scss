@@ -2,11 +2,11 @@ body {
     background-color: #FCFCFC;
     font-family: 'Merriweather', serif;
 }
-img {
-    max-width: 100%;
-}
-.navbar {
-    margin-bottom: 0px;
+.profile-img {
+    max-width: 100px;
+    max-height: 100px;
+    display: block;
+    margin: 0 auto;
 }
 .banner {
     font-style: italic;
@@ -46,6 +46,31 @@ img {
 .spacer {
     height: 5px;
 }
+.banner-navbar li {
+    width: 49%;
+    text-align: center;
+    font-weight: bold;
+    
+    a {
+        color: #DEDEDE;
+        border-radius: 0;
+    }
+    a:hover {
+        color: #383838;
+    }
+}
+.service-button {
+    width: 65%;
+    display: block;
+    margin: 0 auto;
+}
+.content {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.service {
+    margin-right: 10px;
+}
 @media (min-width: 768px) {
     .banner {
         height: 150px;
@@ -57,7 +82,7 @@ img {
     }
     .banner-title {
         margin-left: 50px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         
         h1 {
         font-size: 4em;
@@ -73,6 +98,9 @@ img {
         border-left: 2px solid #D8D8D8;
         padding-left: 10px;
     }
+    .banner-navbar li {
+        width: 20%;
+    }
 }
 @media (min-width: 992px) {
     .banner {
@@ -84,7 +112,7 @@ img {
     }
     .banner-title {
         margin-left: 70px;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
   
         h1 {
             font-size: 5em;
@@ -95,6 +123,9 @@ img {
         img {
             height: 90px;
         }
+    }
+    .banner-navbar li {
+        width: 16%;
     }
 }
 
@@ -110,6 +141,11 @@ img {
 @media(max-width: 768px) {
     .about {
         padding-bottom: 20px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .welcome-portal {
+        margin-bottom: 10px;
     }
     .blog-content {
         border-top: 2px solid #D8D8D8;
@@ -123,20 +159,22 @@ img {
 .about {
     font-size: small;
 }
-.navbar-banner {
-    background-color: #383838;
+.banner-navbar {
+    border-top: 1px solid #D8D8D8;
     border-radius: 0;
-    border: 1px solid #1c1c1c;
     -moz-box-shadow: 0 2px 4px -2px #232323;
     -webkit-box-shadow: 0 2px 4px -2px #232323;
     box-shadow: 0 4px 2px -2px #232323;
 }
-.navbar-banner a {
-    color: #DEDEDE !important; 
-}
-.navbar-banner a:hover {
-    color: #F2F2F2 !important;
-}
+
 .text-light {
     color:  #DEDEDE;
+}
+.text-signature {
+    font-style: italic;
+    font-family: 'Berkshire Swash', cursive;
+}
+.post-title {
+    padding-left: 10px;
+    padding-bottom: 10px;
 }

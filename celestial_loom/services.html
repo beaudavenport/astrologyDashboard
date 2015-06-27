@@ -5,12 +5,11 @@ permalink: /services/
 ---
 
 {% for service in site.services %}
-<div class="row">
-	<div class="col-md-4 col-sm-6 col-xs-12">
+	<div class="col-md-4 col-sm-6 col-xs-12 well service">
 	    <h3>{{ service.title }}</h3>
 	    <p><span class="glyphicon glyphicon-picture"></span></p>
 	    <p>{{ service.content }}</p>
 	    <p>${{ service.price }}</p>
+	    {{ service.paypal-button }}
 	</div>
-</div>
 {% endfor %}
