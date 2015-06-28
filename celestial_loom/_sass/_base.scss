@@ -68,8 +68,21 @@ body {
     padding-left: 25px;
     padding-right: 25px;
 }
-.service {
-    margin-right: 10px;
+.service-price {
+    font-style: italic;
+    font-size: large;
+}
+.service-title {
+    font-style: italic;
+}
+.service-content {
+    overflow: auto;
+    border: 1px solid gray;
+}
+.service-wrapper {
+    padding: 10px;
+    background-color: #D3D3D3;
+    border-radius: 2px;
 }
 @media (min-width: 768px) {
     .banner {

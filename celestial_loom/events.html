@@ -1,0 +1,16 @@
+---
+layout: page
+title: Current Events
+permalink: /events/
+---
+
+{% for events in site.events %}
+	<div class="col-md-4 col-sm-6 col-xs-12 service">
+		<div class="service-wrapper">
+	    <h3 class="service-title">{{ event.title }}</h3>
+	    <p>{{ event.content }}</p>
+	    <p class="service-price">${{ event.price }}</p>
+	    {{ event.paypal-button }}
+    </div>
+	</div>
+{% endfor %}
