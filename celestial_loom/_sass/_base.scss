@@ -84,6 +84,14 @@ body {
     background-color: #D3D3D3;
     border-radius: 2px;
 }
+.social-media {
+    padding: 10px;
+    * {
+      display: block !important;
+      margin: 0 auto; 
+      margin-bottom: 15px;
+    }
+}
 @media (min-width: 768px) {
     .banner {
         height: 150px;
