@@ -13,10 +13,15 @@ $(function() {
 	}
 	
 	parseRSS('https://nikiastro.wordpress.com/feed/', function(feed) {
-		var feedHtml = $(feed.entries[0].content);
-		var $blogContent= $(feedHtml).filter("p").slice(0,2);
+		var lastEntry = feed.entries[0];
+		var $entryContent = $(lastEntry.content);
+		var $blogContent= $entryContent.filter("p").slice(0,2);
 		$('.blog-content').html($blogContent);
-		$('.blog-content').append("<h3>Read more...</h3>");
+		$('.blog-content').after("<div class='blog-title'><h3>" + lastEntry.title +
+									" <small>" + lastEntry.publishedDate.split(" ").slice(0,4).join(" ") +
+									"</small></h3>" + "<h4><a href='" + lastEntry.link + 
+									"'> read more...</a></h4></div>");
+		console.log(lastEntry);
 
 	}, function() {
 		$('.blog-content').html(

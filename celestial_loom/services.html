@@ -9,8 +9,10 @@ permalink: /services/
 		<div class="service-wrapper">
 	    <h3 class="service-title">{{ service.title }}</h3>
 	    <p>{{ service.content }}</p>
-	    <p class="service-price">${{ service.price }}</p>
-	    {{ service.paypal-button }}
+	    <div class="service-purchase">
+	    	<p class="service-price">${{ service.price }}</p>
+	    	{{ service.paypal-button }}
+	    </div>
     </div>
 	</div>
 {% endfor %}
