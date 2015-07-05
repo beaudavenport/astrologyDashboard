@@ -13,8 +13,11 @@ $(function() {
 	}
 	
 	parseRSS('https://nikiastro.wordpress.com/feed/', function(feed) {
-		$('.blog-content').html(feed.entries[0].content);
-		console.log(feed);
+		var feedHtml = $(feed.entries[0].content);
+		var $blogContent= $(feedHtml).filter("p").slice(0,2);
+		$('.blog-content').html($blogContent);
+		$('.blog-content').append("<h3>Read more...</h3>");
+
 	}, function() {
 		$('.blog-content').html(
 			"<p>Can't load blog content. View more posts here: " +
