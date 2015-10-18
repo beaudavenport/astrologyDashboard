@@ -5,6 +5,10 @@ permalink: /services/
 ---
 
 {% for service in site.services %}
+
+	{% assign index_modulo_3 = forloop.index | modulo : 3 %}
+	{% assign index_modulo_2 = forloop.index | modulo : 2 %}
+	
 	<div class="col-md-4 col-sm-6 col-xs-12 service">
 		<div class="service-wrapper">
 	    <h3 class="service-title">{{ service.title }}</h3>
@@ -15,4 +19,15 @@ permalink: /services/
 	    </div>
     </div>
 	</div>
+	
+	{% if index_modulo_3 == 0 %}
+		<div class="clearfix visible-md-block visible-lg-block">
+		</div>
+	{% endif %}
+	
+	{% if index_modulo_2 == 0 %}
+		<div class="clearfix visible-sm-block">
+		</div>
+	{% endif %}
+	
 {% endfor %}
