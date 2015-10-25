@@ -22,9 +22,9 @@ $(function() {
 									"</h3><small>" + entry.publishedDate.split(" ").slice(0,4).join(" ") +
 									"</small></div>"
 									);
-		$('#blog-footer').html("<div class='blog-title'><small>...continue reading on </small><a href='" + 
+		$('#blog-footer').html("<div class='blog-footer'><a href='" + 
 									entry.link +
-									"'>AstroSynergistics</a><small>, the astrology blog of Nikki Davenport</small></div>"
+									"'>...continue reading on <em>AstroSynergistics</em>, the astrology blog of Nikki Davenport</a></div>"
 									);
 	}
 	

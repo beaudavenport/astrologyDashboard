@@ -1,12 +1,23 @@
 /* Background pattern from subtlepatterns.com */
 body {
-    background-color: #FCFCFC;
+    background-color: #8a8b8d;
     font-family: 'Merriweather', serif;
 }
+
+@font-face {
+    font-family: 'AstroGadget';
+    src: url("../public/fonts/AstroGadget.ttf") format('truetype');
+}
+.gadget {
+    font-family: 'AstroGadget';
+}
+
 .service {
     margin-bottom: 20px;
 }
 .profile-img {
+    border: 1px solid #8a8b8d;
+    border-radius: 2px;
     max-width: 100px;
     max-height: 100px;
     display: block;
@@ -78,6 +89,7 @@ body {
 .content {
     padding-left: 25px;
     padding-right: 25px;
+    padding-top: 20px;
 }
 .service-purchase {
     padding-right: 20px;
@@ -112,7 +124,21 @@ body {
 .blog-title {
     font-style: italic;
     text-align: center;
+    line-height: 0.25;
 }
+.blog-footer {
+    font-style: italic;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.blog-wrapper {
+    background-color: #fbfafa;
+    border: 1px solid #d3d3d3;
+    border-radius: 2px;
+    padding: 10px;
+}
+
 @media (min-width: 768px) {
     .banner {
         height: 150px;
@@ -137,11 +163,16 @@ body {
         }
     }
     .blog-content {
-        border-left: 2px solid #D8D8D8;
-        padding-left: 10px;
+        padding: 10px;
     }
     .banner-navbar li {
         width: 33%;
+    }
+    .about {
+        margin-left: 25px;
+    }
+    .content {
+        margin-left: 20px;
     }
 }
 @media (min-width: 992px) {
@@ -169,6 +200,12 @@ body {
     .banner-navbar li {
         width: 16.5%;
     }
+    .about {
+        margin-left: 30px;
+    }
+    .content {
+        margin-left: 25px;
+    }
 }
 
 .footer {
@@ -194,14 +231,20 @@ body {
         padding-top: 10px;
     }
     .social-media {
-    border-bottom: 1px solid #d8d8d8;
+        border-bottom: 1px solid #d8d8d8;
     }
 }
 .blog-content {
-    background-color: #f2f2f2;
+    border-top: 1px solid #d3d3d3;
+    background-color: white;
+    padding: 20px;
+    height: 320px;
+    overflow: auto;
 }
 .about {
     font-size: small;
+    margin-bottom: 20px;
+    padding-top: 15px;
 }
 .banner-navbar {
     border-top: 1px solid #D8D8D8;
@@ -221,4 +264,21 @@ body {
 .post-title {
     padding-left: 10px;
     padding-bottom: 10px;
+}
+.area-panel {
+    box-shadow: 0 0 2px 2px #646567;
+    background-color: white;
+    border-radius: 2px;
+}
+.copy-footer {
+    text-shadow: 0 1px 0 #e5e4e4;
+    width: 300px;
+    margin: 0 auto;
+    line-height: 1.25;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    .gadget {
+        font-size: 2em;
+    }
 }
