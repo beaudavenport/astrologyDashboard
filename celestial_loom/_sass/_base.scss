@@ -11,7 +11,13 @@ body {
 .gadget {
     font-family: 'AstroGadget';
 }
-
+.gadget-big {
+    font-family: 'AstroGadget';
+    font-size: 1.75em;
+}
+.icon-panel {
+    text-align: center;
+}
 .service {
     margin-bottom: 20px;
 }
@@ -92,7 +98,9 @@ body {
     padding-top: 20px;
 }
 .service-purchase {
+    border-top: 1px solid #D8D8D8;
     padding-right: 20px;
+    padding-top: 10px;
     text-align: right;
 }
 .service-price {
@@ -109,9 +117,14 @@ body {
     border: 1px solid gray;
 }
 .service-wrapper {
-    padding: 10px;
-    background-color: #F2F2F2;
-    border-radius: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    ul {
+        font-size: small;
+        font-style: italic;
+    }
 }
 .social-media {
     padding: 10px;
@@ -172,7 +185,11 @@ body {
         margin-left: 25px;
     }
     .content {
-        margin-left: 20px;
+        margin-left: 30px;
+    }
+    .page-content {
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 @media (min-width: 992px) {
@@ -204,7 +221,11 @@ body {
         margin-left: 30px;
     }
     .content {
-        margin-left: 25px;
+        margin-left: 30px;
+    }
+    .page-content {
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 
@@ -234,12 +255,16 @@ body {
         border-bottom: 1px solid #d8d8d8;
     }
 }
+
 .blog-content {
     border-top: 1px solid #d3d3d3;
     background-color: white;
     padding: 20px;
     height: 320px;
     overflow: auto;
+}
+.page-content {
+    padding: 20px;
 }
 .about {
     font-size: small;
@@ -260,10 +285,15 @@ body {
 .text-signature {
     font-style: italic;
     font-family: 'Berkshire Swash', cursive;
+    padding-bottom: 10px;
 }
 .post-title {
     padding-left: 10px;
     padding-bottom: 10px;
+    text-shadow: 0 1px 0 #e5e4e4;;
+}
+.wrapper {
+    padding: 10px;
 }
 .area-panel {
     box-shadow: 0 0 2px 2px #646567;
@@ -278,6 +308,7 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
+    font-style: bold;
     .gadget {
         font-size: 2em;
     }

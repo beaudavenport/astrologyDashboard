@@ -4,18 +4,24 @@ title: Signs of the Zodiac
 permalink: /signs/
 ---
 
-Aries
+<div class="col-sm-2">
+<h3><span class="gadget-big">a</span> Aries</h3>
+</div>
+<div class="col-sm-10">
+<em>Key Phrase</em>:  I AM
 
-Key Phrase:  I AM
 
 Basic Nature:  Pioneer and Warrior
+
 
 Keywords:  courageous, independent, assertive, spontaneous, head of cosmic man, self-
 expressive, dynamic, competitive, possess much initiative, penetrating power of 
 perception, adventurous, filled with the fires of life, pioneer, inspired enthusiastic, natural 
 leader, self- motivated, pilgrim on the road to enlightenment
 
+</div>
 
+<hr />
 Taurus
 
 Key Phrase:  I HAVE

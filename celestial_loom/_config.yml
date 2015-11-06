@@ -10,3 +10,6 @@ blog_paragraphs: 5
 markdown: kramdown
 collections:
   - services
+  - signs
+  - houses
+  - planets

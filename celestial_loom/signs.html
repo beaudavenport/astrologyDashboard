@@ -1,0 +1,19 @@
+---
+layout: page
+title: Signs of the Zodiac
+permalink: /signs/
+---
+{% for sign in site.signs %}
+
+<div class="row">
+  <div class="icon-panel col-sm-2">
+    <h3 class="gadget-big">{{ sign.glyph }}</h3>
+    <h3>{{ sign.name }}</h3>
+  </div>
+  <div class="col-sm-10">
+    {{ sign.content }}
+  </div>
+  <hr />
+</div>
+
+{% endfor %}
