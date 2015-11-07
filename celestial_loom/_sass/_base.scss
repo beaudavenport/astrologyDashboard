@@ -15,8 +15,22 @@ body {
     font-family: 'AstroGadget';
     font-size: 1.75em;
 }
+.tiny-bullets {
+    text-align: center;
+    font-weight: bold;
+}
+.center-align {
+    text-align: center;
+}
 .icon-panel {
     text-align: center;
+    margin-bottom: 10px;
+}
+.page-content-row {
+    border-bottom: 1px solid #d3d3d3;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
 .service {
     margin-bottom: 20px;
@@ -82,7 +96,11 @@ body {
 .service-button {
     width: 65%;
     display: block;
+    background-color: #138808;
+    border-color: #568203;
     margin: 0 auto;
+    font-weight: bold;
+    color: #FEFEFA;
 }
 .bio {
     width: 70%;
@@ -91,6 +109,7 @@ body {
     padding-bottom: 10px;
     padding-top: 10px;
     border-top: 1px solid #D8D8D8;
+    text-align: center;
 }
 .content {
     padding-left: 25px;
@@ -251,8 +270,13 @@ body {
         border-top: 2px solid #D8D8D8;
         padding-top: 10px;
     }
-    .social-media {
-        border-bottom: 1px solid #d8d8d8;
+    .icon-panel {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .page-content-row {
+        margin-bottom: 0px;
+        padding-top: 0px;
     }
 }
 
@@ -264,7 +288,7 @@ body {
     overflow: auto;
 }
 .page-content {
-    padding: 20px;
+    padding: 30px;
 }
 .about {
     font-size: small;
@@ -313,3 +337,4 @@ body {
         font-size: 2em;
     }
 }
+

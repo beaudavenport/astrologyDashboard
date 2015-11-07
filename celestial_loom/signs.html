@@ -3,17 +3,17 @@ layout: page
 title: Signs of the Zodiac
 permalink: /signs/
 ---
-{% for sign in site.signs %}
+{% assign signs = site.signs | sort: 'glyph' %}
+{% for sign in signs %}
 
-<div class="row">
-  <div class="icon-panel col-sm-2">
+<div class="row page-content-row">
+  <div class="icon-panel col-sm-3 col-md-2">
     <h3 class="gadget-big">{{ sign.glyph }}</h3>
     <h3>{{ sign.name }}</h3>
   </div>
-  <div class="col-sm-10">
+  <div class="col-sm-9 col-md-10">
     {{ sign.content }}
   </div>
-  <hr />
 </div>
 
 {% endfor %}
