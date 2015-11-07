@@ -1,0 +1,19 @@
+---
+layout: page
+title: Houses
+permalink: /houses/
+---
+{% assign houses = site.houses | sort: 'order' %}
+{% for house in houses %}
+
+<div class="row page-content-row">
+  <div class="icon-panel col-sm-3 col-md-2">
+    <h3 class="gadget-big">{{ house.glyph }}</h3>
+    <h3>{{ house.name }}</h3>
+  </div>
+  <div class="col-sm-9 col-md-10">
+    {{ house.content }}
+  </div>
+</div>
+
+{% endfor %}
