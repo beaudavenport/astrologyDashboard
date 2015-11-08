@@ -31,7 +31,7 @@ $(function() {
 	var renderError = function() {
 		$('.blog-content').html(
 			"<p>Can't load blog content. View more posts here: " +
-			"<a href='http://astrosynergistics.blogspot.com'>Astrosynergistics</a></p>"
+			"<a href='https://nikiastro.wordpress.com/'>Astrosynergistics</a></p>"
 			);
 	}
 	
@@ -39,7 +39,6 @@ $(function() {
 		var lastEntry = feed.entries[0];
 		var $entryContent = $(lastEntry.content);
 		var $blogContent= $entryContent.filter("p, ul").slice(0,numberOfParagraphs);
-		console.log(lastEntry.content);
 		renderContent(lastEntry, $blogContent);
 	}, function() {
 		renderError();
