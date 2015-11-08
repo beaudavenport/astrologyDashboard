@@ -4,13 +4,19 @@ title: Current Events
 permalink: /events/
 ---
 
-{% for events in site.events %}
-	<div class="col-md-4 col-sm-6 col-xs-12 service">
-		<div class="service-wrapper">
-	    <h3 class="service-title">{{ event.title }}</h3>
-	    <p>{{ event.content }}</p>
-	    <p class="service-price">${{ event.price }}</p>
-	    {{ event.paypal-button }}
-    </div>
+<div class="container-fluid">
+	<div class="col-sm-6 col-xs-12">
+		<h3>Interesting in a Celestial Loom event near you? Contact me!</h3>
 	</div>
-{% endfor %}
+	<div class="col-sm-6 col-xs-12">
+		<div class="facebook-wrapper">
+			<div class="fb-page" data-href="https://www.facebook.com/celestialloom" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false" data-show-posts="true">
+				<div class="fb-xfbml-parse-ignore">
+					<blockquote cite="https://www.facebook.com/celestialloom">
+						<a href="https://www.facebook.com/celestialloom">The Celestial Loom</a>
+					</blockquote>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

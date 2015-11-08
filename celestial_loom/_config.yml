@@ -1,10 +1,10 @@
 # Site settings
 title: The Celestial Loom
-email: your-email@domain.com
+email: nikiastro@att.net
 baseurl: "/"
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://www.celestialloomastrology.com" # the base hostname & protocol for your site
 
-blog_paragraphs: 5
+blog_paragraphs: 5 # number of <p> tags rendered from RSS feed
 
 # Build settings
 markdown: kramdown
